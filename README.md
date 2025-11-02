@@ -1,13 +1,21 @@
-# Presentation Template
+# Users of JupyterHub
 
 <DOI badge>
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-Presented at [<conference>](<conference_url>)
+Presented at [JupyterCon 2025](https://events.linuxfoundation.org/jupytercon/)
 
 ## Abstract
+Join JupyterHub's project team and other users and administrators of JupyterHub for a half day workshop exploring their experiences, perspectives, and ideas for the future of the project. 
+The session will forge closer links between JupyterHub's volunteer community and Hub administrators, while collectively identifying improvement opportunities and strengthening community-driven development. 
 
-<abstract>
+We'll kick off with lightning talks showcasing diverse JupyterHub implementations across education, research, and industry, sparking cross-domain knowledge sharing. 
+We'll then reflect on different aspects of the project and community in focused breakout sessions before coming back together to discuss as a group. Finally, we'll explore practical opportunities for direct contribution to the project. 
+
+This session is aimed at those who have deployed or used JupyterHub at least once before, and would like to share their experiences and learn from others. 
+The core team will also be looking for opportunities to more publicly celebrate their contributors to JupyterHub, both online, and with physical tokens of appreciation.
+
+
 
 ## Usage
 

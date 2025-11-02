@@ -4,55 +4,185 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>reveal.js</title>
+        <title>Users of JupyterHub at JupyterCon 2025</title>
 
-        <link rel="stylesheet" href="reveal.js/dist/reset.css">
-        <link rel="stylesheet" href="reveal.js/dist/reveal.css">
-        <link rel="stylesheet" href="reveal.js/dist/theme/black.css">
+    <style>
+      /* Capitalise headings */
 
-        <!-- Theme used for syntax highlighted code -->
-        <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
+      h1,
+      h2,
+      h3,
+      h4 {
+        text-transform: capitalize;
+      }
+      /* Align text in tables */
+      table td,
+      table th {
+        text-align: center;
+      }
 
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+      /* Set caption text size */
+      figcaption {
+        font-size: medium;
+      }
+      /* Columns div definition */
+      div {
+        &.columns {
+          display: flex;
+          gap: min(4vw, 1.5em);
+        }
+        &.column {
+          flex: auto;
+          overflow-x: auto;
+        }
+      }
+      .fragment.blur {
+        /* Blur fragment */
+        filter: blur(8px);
 
-        <!-- Custom styling -->
+        &.visible {
+          filter: none;
+        }
+      }
+      .fragment.highlight {
+        &.current-fragment {
+          color: var(--jp-orange);
+        }
+      }
+      strong {
+        color: var(--jp-orange);
+      }
+
+      :root {
+        --jp-orange: #f37626;
+      }
+
+      .jp-orange {
+        color: var(--jp-orange);
+      }
+
+      section.present > .typewriter {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 0.15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: auto auto !important; /* Gives that scrolling effect as the typing happens */
+        text-align: center;
+        letter-spacing: 0.15em; /* Adjust as needed */
+        animation:
+          typing 3.5s steps(40, end),
+          blink-caret 0.75s step-end infinite;
+      }
+
+      /* The typing effect */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: orange;
+        }
+      }
+    </style>
+    <!-- Custom styling -->
         <style>
-            /* Capitalise headings */
-            .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
-                text-transform: capitalize;
-            }
-            /* Set caption text size */
-            figcaption {
-                font-size: medium;
-            }
-            /* Align text in tables */
-            .reveal table td, .reveal table th {
-                text-align: center;
-            }
-            /* Columns div definition */
-            div.columns{
-                display: flex;
-                gap: min(4vw, 1.5em);
-            }
-            div.column{
-                flex: auto;
-                overflow-x: auto;
-            }
-            /* Blur fragment */
-            .fragment.blur {
-                filter: blur(8px);
-            }
-            .fragment.blur.visible {
-                filter: none;
-            }
+      @layer base, fonts, highlight, reveal, theme;
+      @import "./reveal.js/dist/reset.css" layer(base);
+      @import "./reveal.js/dist/reveal.css" layer(reveal);
+      @import "./reveal.js/dist/theme/black.css" layer(theme);
+      @import "./reveal.js/plugin/highlight/monokai.css" layer(highlight);
+      @import "./assets/fontawesome/css/all.css" layer(fonts);
         </style>
     </head>
     <body>
         <div class="reveal">
             <div class="slides">
-                <section>Slide 1</section>
-                <section>Slide 2</section>
+        <!-- Title slide -->
+                <section>
+                <h1 class="r-fit-text">
+              Users of JupyterHub <br />@ JupyterCon 2025
+            </h1>
+                </section>
+        <!-- Intro to presenters --> 
+                <section>
+                    Slide 2
+                </section>
+        <!-- Overview of the session & useful URLs -->
+                 <section>
+                    <h2>Users of JupyterHub Workshop <br> Agenda</h2>
+                    <table>
+                      <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                      </tr>
+                      <tr>
+                        <td>00:00 - 00:20</td>
+                        <td>00:20 - 01:00</td>
+                        <td>01:00 - 02:15</td>
+                        <td>02:15 - 02:30</td>
+                        <td>02:30 - 03:20</td>
+                        <td>03:20 - 03:30</td>
+                      </tr>
+                      <tr>
+                        <td>Scene Setting</td>
+                        <td>Introductions</td>
+                        <td>Group Discussions & Shareouts</td>
+                        <td>Break</td>
+                        <td>Contributing to JupyerHub as user</td>
+                        <td>Wrap up & next steps</td>
+                      </tr>
+                    </table>
+                </section>
+        <!-- Why run a users workshop? --> 
+                 <section>
+                    Slide 4
+                </section>
+        <!-- Why run a users workshop? --> 
+                 <section>
+                    Slide 5
+                </section>
+        <!-- Group introductions --> 
+                 <section>
+                    Slide 6
+                </section>
+        <!-- Groups!Discussion time --> 
+                 <section>
+                    Slide 7
+                </section>
+        <!-- Discussion time --> 
+                 <section>
+                    Slide 8
+                </section>
+        <!-- Break --> 
+                 <section>
+                    Slide 9
+                </section>
+        <!-- Contributing to JH-intro --> 
+                 <section>
+                    Slide 10
+                </section>
+        <!-- Contributng to JH-brainstorming --> 
+                 <section>
+                    Slide 11
+                </section>
+        <!-- Contributing to JH-use cases --> 
+                 <section>
+                    Slide 12
+                </section>
+        <!-- Next steps - HubDash-Community Share Out-SignUp to stay in touch --> 
+                 <section>
+                    Slide 13
+                </section>
             </div>
         </div>
 
